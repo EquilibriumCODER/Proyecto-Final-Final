@@ -1,0 +1,148 @@
+.main {
+    &_divA {
+        grid-area: article1;
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 100%;
+        margin: 0.5rem;
+        padding: 1rem;
+        gap: 0.5rem;
+        font-family: 'Special Elite', cursive;
+        background-image: url(../resources/images/paper_sheet.png);
+        background-size: contain;
+        &_p {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            overflow: hidden scroll;
+        }
+    }
+    &_divB {
+        grid-area: article2;
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 100%;
+        padding: 1rem;
+        gap: 0.5rem;
+        font-family: 'Special Elite', cursive;
+        margin: 0.5rem;
+        background-image: url(../resources/images/paper_sheet.png);
+        background-size: contain;
+        &_p {
+            overflow: hidden scroll;
+        }
+    }
+    &_divC {
+        grid-area: article3;
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 100%;
+        padding: 1rem;
+        gap: 0.5rem;
+        font-family: 'Special Elite', cursive;
+        margin: 0.5rem;
+        background-image: url(../resources/images/paper_sheet.png);
+        background-size: contain;
+        &_p {
+            overflow: hidden scroll;
+        }
+    }
+    &_divD {
+        grid-area: article4;
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 100%;
+        padding: 1rem;
+        gap: 0.5rem;
+        font-family: 'Special Elite', cursive;
+        margin: 0.5rem;
+        background-image: url(../resources/images/paper_sheet.png);
+        background-size: contain;
+        &_p {
+            overflow: hidden scroll;
+        }
+    }
+    &_a {
+        text-decoration: none;
+        color: blue;
+        position: relative,fixed;
+        bottom: 0.5rem; 
+    }
+    &_noticias {
+        grid-area: article1;
+    }
+    &_aside {
+        grid-area: aside1;
+        width:100%;
+        height: 20rem;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-flow: column wrap;
+        &_h3 {
+            display: flex;
+            text-decoration-style: none;
+            text-align: center;
+            align-items: center;
+            font-size: 0.8rem;
+            color: white;
+            background-color: black;
+            height: 3rem;
+            padding-left: 0.5rem;
+        }
+        &_ul {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            list-style-type: none;
+            justify-content: space-evenly;
+            text-decoration: none;
+            background-color: rgb(85, 82, 82);
+            font-size: 0,8rem;
+            &_li {
+                font-size: smaller;
+                max-width: 100%;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+            }
+            &_a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    &_mainNoticia {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: center;
+        margin: 0.5rem;
+        font-family: 'Special Elite', cursive;
+        &_h2 {
+            display: flex;
+            font-weight: bold;
+            font-size: larger;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            text-align: justify;
+        }
+        &_h3 {
+            display: flex;
+            font-weight: bold;
+            font-size: larger;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            text-align: justify;
+        }
+        &_p {
+            display: flex;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            text-align: justify;
+        }
+        &_img {
+            display: flex;
+            width: 100%;
+        }
+    }
+}
+

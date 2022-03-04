@@ -1,0 +1,300 @@
+.tituloFilms {
+    grid-area: title;
+}
+.poster1 {
+    grid-area: poster1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info1 {
+    grid-area: info1;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video1 {
+    grid-area: video1;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster2 {
+    grid-area: poster2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info2 {
+    grid-area: info2;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video2 {
+    grid-area: video2;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster3 {
+    grid-area: poster3;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info3 {
+    grid-area: info3;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video3 {
+    grid-area: video3;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster4 {
+    grid-area: poster4;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info4 {
+    grid-area: info4;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video4 {
+    grid-area: video4;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster5 {
+    grid-area: poster5;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info5 {
+    grid-area: info5;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video5 {
+    grid-area: video5;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster6 {
+    grid-area: poster6;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info6 {
+    grid-area: info6;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video6 {
+    grid-area: video6;display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster7 {
+    grid-area: poster7;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info7 {
+    grid-area: info7;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video7 {
+    grid-area: video7;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster8 {
+    grid-area: poster8;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info8 {
+    grid-area: info8;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video8 {
+    grid-area: video8;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster9 {
+    grid-area: poster9;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info9 {
+    grid-area: info9;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video9 {
+    grid-area: video9;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.poster10 {
+    grid-area: poster10;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.info10 {
+    grid-area: info10;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+.video10 {
+    grid-area: video10;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: rgb(68, 68, 68) solid;
+    padding-bottom: 3rem;
+}
+.h2 {
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}

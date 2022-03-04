@@ -1,0 +1,136 @@
+.body {
+    display: grid;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-areas: "head head head" "article1 article2 aside1" "article3 article4 aside2" "foot foot foot";
+}
+.body_noticias {
+    display: grid;
+    grid-template-rows: 1fr 10fr 10fr 1fr;
+    grid-template-columns: 8fr 2fr;
+    grid-template-areas: "head head" "article1 aside1" "article2 aside2" "foot foot";
+}
+.body_films {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 1fr;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-areas:    "head head head" 
+                            "title title title" 
+                            "poster1 info1 aside1" 
+                            "video1 video1 aside1b" 
+                            "poster2 info2 aside2a" 
+                            "video2 video2 aside2b" 
+                            "poster3 info3 aside3a" 
+                            "video3 video3 aside3b" 
+                            "poster4 info4 aside4a" 
+                            "video4 video4 aside4b" 
+                            "poster5 info5 aside5a" 
+                            "video5 video5 aside5b" 
+                            "poster6 info6 aside6a" 
+                            "video6 video6 aside6b" 
+                            "poster7 info7 aside7a" 
+                            "video7 video7 aside7b" 
+                            "poster8 info8 aside8a" 
+                            "video8 video8 aside8b" 
+                            "poster9 info9 aside9a" 
+                            "video9 video9 aside9b" 
+                            "poster10 info10 aside10a" 
+                            "video10 video10 aside10b"                    
+}
+
+
+@media (max-width: 479px) {
+    .body {
+        grid-template-rows: 1fr 5fr 5fr 5fr 5fr 2.5fr 2.5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "article1" "article2" "article3" "article4" "aside1" "aside2" "foot";
+    }
+    .body_noticias {
+        grid-template-rows: 1fr 20fr 2.5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "article1" "aside1" "foot";
+    }
+}
+
+@media (min-width: 480px) and (max-width:719px) {
+    .body {
+        grid-template-rows: 1fr 5fr 5fr 5fr 5fr 1fr;
+        grid-template-columns: 4fr 2fr;
+        grid-template-areas: "head head" "article1 aside1" "article2 aside2" "article3 aside3" "article4 aside4" "foot foot";
+        header {
+            grid-column: 1 /span 2;
+        }
+        footer {
+            grid-column: 1 /span 2;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .body {
+        display: grid;
+        grid-template-rows: 1fr 5fr 5fr 1fr;
+        grid-template-columns: 4fr 4fr 2fr;
+        grid-template-areas: "head head head" "article1 article2 aside1" "article3 article4 aside2" "foot foot foot";
+        header {
+            grid-column: 1 /span 3;
+        }
+        footer {
+            grid-column: 1 /span 3;
+        }
+    }
+    .body_films {
+        display: grid;
+        grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-areas:    "head head head" 
+                                "title title title" 
+                                "poster1 info1 aside1" 
+                                "video1 video1 aside1b" 
+                                "poster2 info2 aside2a" 
+                                "video2 video2 aside2b" 
+                                "poster3 info3 aside3a" 
+                                "video3 video3 aside3b" 
+                                "poster4 info4 aside4a" 
+                                "video4 video4 aside4b" 
+                                "poster5 info5 aside5a" 
+                                "video5 video5 aside5b" 
+                                "poster6 info6 aside6a" 
+                                "video6 video6 aside6b" 
+                                "poster7 info7 aside7a" 
+                                "video7 video7 aside7b" 
+                                "poster8 info8 aside8a" 
+                                "video8 video8 aside8b" 
+                                "poster9 info9 aside9a" 
+                                "video9 video9 aside9b" 
+                                "poster10 info10 aside10a" 
+                                "video10 video10 aside10b"                    
+    }
+    header {
+        grid-column: 1 /span 3;
+    }
+    footer {
+        grid-column: 1 /span 3;
+    }
+}
+
+@media (min-width:480px) {
+    .body_noticias {
+        display: grid;
+        grid-template-rows: 1fr 10fr 10fr 1fr;
+        grid-template-columns: 8fr 2fr;
+        grid-template-areas: "head head" "article1 aside1" "article1 aside2" "foot foot";
+        header {
+            grid-column: 1 /span 2;
+        }
+        main {
+            grid-area: article1;
+        }
+        aside {
+            grid-area: aside1;
+        }
+        footer {
+            grid-column: 1 /span 2;
+        }
+    }
+}
