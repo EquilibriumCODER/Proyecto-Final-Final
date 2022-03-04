@@ -28,7 +28,7 @@ html {
       align-content: center;
       text-align: center;
       justify-content: space-evenly;
-      font-size: larger; }
+      font-size: large; }
     .header_nav_li {
       text-decoration-style: none;
       text-align: center;
@@ -37,8 +37,7 @@ html {
       .header_nav_li_a {
         text-decoration: none;
         color: white;
-        font-size: x-large;
-        align-items: center; }
+        font-size: larger; }
 
 a:hover {
   color: red; }
@@ -146,33 +145,33 @@ a:hover {
       text-decoration: none;
       color: white; }
 
-.main_mainNoticia {
+.main_noticias_div {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: left;
   align-items: center;
   margin: 0.5rem;
   font-family: 'Special Elite', cursive; }
-  .main_mainNoticia_h2 {
+  .main_noticias_div_h2 {
     display: flex;
     font-weight: bold;
     font-size: larger;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: justify; }
-  .main_mainNoticia_h3 {
+  .main_noticias_div_h3 {
     display: flex;
     font-weight: bold;
     font-size: larger;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: justify; }
-  .main_mainNoticia_p {
+  .main_noticias_div_p {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: justify; }
-  .main_mainNoticia_img {
+  .main_noticias_div_img {
     display: flex;
     width: 100%; }
 
@@ -206,9 +205,9 @@ a {
 
 .body_noticias {
   display: grid;
-  grid-template-rows: 1fr 10fr 10fr 1fr;
+  grid-template-rows: 1fr 20fr 1fr;
   grid-template-columns: 8fr 2fr;
-  grid-template-areas: "head head" "article1 aside1" "article2 aside2" "foot foot"; }
+  grid-template-areas: "head head" "article1 aside1" "foot foot"; }
 
 .body_films {
   display: grid;
@@ -259,9 +258,9 @@ a {
 @media (min-width: 480px) {
   .body_noticias {
     display: grid;
-    grid-template-rows: 1fr 10fr 10fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
     grid-template-columns: 8fr 2fr;
-    grid-template-areas: "head head" "article1 aside1" "article1 aside2" "foot foot"; }
+    grid-template-areas: "head head" "article1 aside1" "foot foot"; }
     .body_noticias header {
       grid-column: 1 /span 2; }
     .body_noticias main {
