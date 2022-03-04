@@ -215,9 +215,9 @@ a {
 
 .body_films {
   display: grid;
-  grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 1fr;
+  grid-template-rows: 1fr 0.5fr repeat 21, 1fr;
   grid-template-columns: 2fr 6fr 2fr;
-  grid-template-areas: "head head head"  "title title title"  "poster1 info1 aside1"  "video1 video1 aside1b"  "poster2 info2 aside2a"  "video2 video2 aside2b"  "poster3 info3 aside3a"  "video3 video3 aside3b"  "poster4 info4 aside4a"  "video4 video4 aside4b"  "poster5 info5 aside5a"  "video5 video5 aside5b"  "poster6 info6 aside6a"  "video6 video6 aside6b"  "poster7 info7 aside7a"  "video7 video7 aside7b"  "poster8 info8 aside8a"  "video8 video8 aside8b"  "poster9 info9 aside9a"  "video9 video9 aside9b"  "poster10 info10 aside10a"  "video10 video10 aside10b"; }
+  grid-template-areas: "head head head"  "title title title"  "poster1 info1 aside1"  "video1 video1 aside1b"  "poster2 info2 aside2a"  "video2 video2 aside2b"  "poster3 info3 aside3a"  "video3 video3 aside3b"  "poster4 info4 aside4a"  "video4 video4 aside4b"  "poster5 info5 aside5a"  "video5 video5 aside5b"  "poster6 info6 aside6a"  "video6 video6 aside6b"  "poster7 info7 aside7a"  "video7 video7 aside7b"  "poster8 info8 aside8a"  "video8 video8 aside8b"  "poster9 info9 aside9a"  "video9 video9 aside9b"  "poster10 info10 aside10a"  "video10 video10 aside10b" "foot foot foot"; }
 
 @media (max-width: 575px) {
   .body {
@@ -229,7 +229,12 @@ a {
     grid-template-columns: 1fr;
     grid-template-areas: "head" "article1" "aside1" "foot"; }
   .header_nav_li_a {
-    font-size: small; } }
+    font-size: small; }
+  .body_films {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr repeat 31, 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "head"  "title"  "poster1"  "info1"   "video1"  "poster2" "info2"  "video2"  "poster3" "info3"  "video3"  "poster4" "info4"  "video4"  "poster5" "info5"  "video5"  "poster6" "info6"  "video6"  "poster7" "info7"  "video7"  "poster8" "info8"  "video8"  "poster9"  "info9" "video9"  "poster10" "info10"  "video10" "foot"; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .body {
@@ -255,15 +260,15 @@ a {
       grid-column: 1 /span 3; }
   .body_films {
     display: grid;
-    grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr repeat 21, 1fr;
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas: "head head head"  "title title title"  "poster1 info1 aside1"  "video1 video1 aside1b"  "poster2 info2 aside2a"  "video2 video2 aside2b"  "poster3 info3 aside3a"  "video3 video3 aside3b"  "poster4 info4 aside4a"  "video4 video4 aside4b"  "poster5 info5 aside5a"  "video5 video5 aside5b"  "poster6 info6 aside6a"  "video6 video6 aside6b"  "poster7 info7 aside7a"  "video7 video7 aside7b"  "poster8 info8 aside8a"  "video8 video8 aside8b"  "poster9 info9 aside9a"  "video9 video9 aside9b"  "poster10 info10 aside10a"  "video10 video10 aside10b"; }
+    grid-template-areas: "head head head"  "title title title"  "poster1 info1 aside1"  "video1 video1 aside1b"  "poster2 info2 aside2a"  "video2 video2 aside2b"  "poster3 info3 aside3a"  "video3 video3 aside3b"  "poster4 info4 aside4a"  "video4 video4 aside4b"  "poster5 info5 aside5a"  "video5 video5 aside5b"  "poster6 info6 aside6a"  "video6 video6 aside6b"  "poster7 info7 aside7a"  "video7 video7 aside7b"  "poster8 info8 aside8a"  "video8 video8 aside8b"  "poster9 info9 aside9a"  "video9 video9 aside9b"  "poster10 info10 aside10a"  "video10 video10 aside10b" "foot foot foot"; }
   header {
     grid-column: 1 /span 3; }
   footer {
     grid-column: 1 /span 3; } }
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .body_noticias {
     display: grid;
     grid-template-rows: 1fr 20fr 1fr;
@@ -293,11 +298,12 @@ a {
   grid-area: info1;
   display: flex;
   flex-flow: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   padding-left: 10rem;
   padding-right: 5rem;
-  font-size: larger; }
+  font-size: larger;
+  height: 50vh; }
 
 .video1 {
   grid-area: video1;
