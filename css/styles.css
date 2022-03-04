@@ -27,8 +27,7 @@ html {
       flex-flow: row wrap;
       align-content: center;
       text-align: center;
-      justify-content: space-evenly;
-      font-size: large; }
+      justify-content: space-evenly; }
     .header_nav_li {
       text-decoration-style: none;
       text-align: center;
@@ -223,7 +222,9 @@ a {
   .body_noticias {
     grid-template-rows: 1fr 20fr 2.5fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "head" "article1" "aside1" "foot"; } }
+    grid-template-areas: "head" "article1" "aside1" "foot"; }
+  .header_nav_li_a {
+    font-size: small; } }
 
 @media (min-width: 480px) and (max-width: 719px) {
   .body {
