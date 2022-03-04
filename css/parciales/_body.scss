@@ -6,9 +6,9 @@
 }
 .body_noticias {
     display: grid;
-    grid-template-rows: 1fr 10fr 10fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
     grid-template-columns: 8fr 2fr;
-    grid-template-areas: "head head" "article1 aside1" "article2 aside2" "foot foot";
+    grid-template-areas: "head head" "article1 aside1" "foot foot";
 }
 .body_films {
     display: grid;

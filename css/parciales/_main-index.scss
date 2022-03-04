@@ -110,9 +110,9 @@
             }
         }
     }
-    &_mainNoticia {
+    &_noticias_div {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: left;
         align-items: center;
         margin: 0.5rem;
