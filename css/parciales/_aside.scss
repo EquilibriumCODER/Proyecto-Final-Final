@@ -1,0 +1,23 @@
+.aside {
+    width: 19%;
+    height: 20rem;
+    background-color: black;
+    &_h3 {
+        text-decoration-style: none;
+        font-size: smaller;
+        color: white;
+    }
+    &_ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        list-style-type: none;
+        &_li {
+            justify-content: left;
+            font-size: smaller;
+        }
+    }
+}
+body div aside ul li {
+    text-decoration-style: none 
+}
