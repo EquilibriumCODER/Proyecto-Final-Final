@@ -38,32 +38,30 @@
         align-items: center;
         font-size: medium;
         width:100%;
+        height: 50%;
         padding: 1rem 0.5rem 1rem 0.5rem;
         margin-left: 0.5rem;
         &_p {
             display: flex;
             flex-flow: column;
             width: 80%;
-            height: auto;
+            height: 100%;
+            justify-content: space-between;
         }
     }
     &_video {
         display: flex;
-        flex-flow:column ;
         padding: 1rem 0.5rem 2rem 0.5rem;
-        max-width: 100%;
-        height:50vh;
-        justify-items: flex-start;
-        align-items:flex-start;
+        width: 100%;
+        height: 50vh;
+        justify-items: center;
+        align-items:center;
         border-bottom: 0.5rem solid black;
         &_div {
             display: flex;
             flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
             width:100%;
-            position: relative;
+            height:100%;
         }    
     }
 }

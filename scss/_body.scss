@@ -1,6 +1,6 @@
 .body {
     display: grid;
-    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
     grid-template-columns: 4fr 4fr 2fr;
     grid-template-areas: "head head head" "article1 article2 aside1" "article3 article4 aside2" "foot foot foot";
 }
@@ -23,17 +23,39 @@
         max-width: 100%;
     }
     iframe {
-        width: 100%;
+        width: fit-content;
         height:100%;
-        position: absolute;
+        
     }
 }
+.body_contactos {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "head head head" "main1 main2 aside1" "foot foot foot";
+    gap: 1rem;
+}
+.body_socios {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 0.25fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0,5fr;
+    grid-template-areas: "head head" "title1 title2" "socio1 aside1" "socio2 aside2" "socio3 aside3" "socio4 aside4" "socio5 aside5" "socio6 aside6" "foot foot";
+    gap: 2rem;
+    header {
+        grid-column: 1 /span 2;
+    }
+    footer {
+        grid-column: 1 /span 2;
+    }
+
+}
+
 
 @media (max-width: 767px) {
     .body {
-        grid-template-rows: 1fr 5fr 5fr 5fr 5fr 2.5fr 2.5fr 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "head" "article1" "article2" "article3" "article4" "aside1" "aside2" "foot";
+        grid-template-areas: "head" "article1" "article2" "article3" "article4" "aside1" "foot";
     }
     .body_noticias {
         grid-template-rows: 1fr 20fr 2.5fr 1fr;
@@ -44,7 +66,7 @@
         font-size: 3rem;
     }
     .header_nav_li_a {
-        font-size: small;
+        font-size: medium;
     }
 
     .body_films {
@@ -70,12 +92,76 @@
             grid-column: 1;
         }
     }
+    .body_contactos {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1.5fr 1.5fr 1fr 1fr;
+        grid-template-areas: "head" "main1" "main2" "aside1" "foot";
+        .main_contactos {
+            align-items: center;
+        }
+        .main_contactos2 {
+            align-items: center;
+            &_div {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        footer {
+            grid-area: foot;
+            grid-column: 1;
+        }
+    }
+    .body_socios {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 0.25fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0,5fr;
+        grid-template-areas: "head" "title1" "socio1" "socio2" "socio3" "socio4" "socio5" "socio6" "aside1" "foot";
+        gap: 2rem;
+        &_socio1 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &_socio2 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &_socio3 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &_socio4 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &_socio5 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &_socio6 {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        header {
+            grid-column: 1 /span 2;
+        }
+        footer {
+            grid-column: 1 /span 2;
+        }
+    
+    }
 }
 
 @media (min-width: 768px) {
     .body {
         display: grid;
-        grid-template-rows: 1fr 5fr 5fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
         grid-template-columns: 4fr 4fr 2fr;
         grid-template-areas: "head head head" "article1 article2 aside1" "article3 article4 aside2" "foot foot foot";
         header {
