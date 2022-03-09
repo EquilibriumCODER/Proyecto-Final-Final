@@ -1,0 +1,69 @@
+.body_films {
+    &_main {
+        grid-area: main;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:flex-start;
+        align-items: left;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    &_h2 {
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    &_poster {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        max-width: 100%;
+        &_div {
+            overflow: hidden;
+            max-width: 80%;
+            img  {
+                max-height: 75vw;
+                width: auto;
+            }
+        }
+    }
+    &_article {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: medium;
+        width:100%;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        margin-left: 0.5rem;
+        &_p {
+            display: flex;
+            flex-flow: column;
+            width: 80%;
+            height: auto;
+        }
+    }
+    &_video {
+        display: flex;
+        flex-flow:column ;
+        padding: 1rem 0.5rem 2rem 0.5rem;
+        max-width: 100%;
+        height:50vh;
+        justify-items: flex-start;
+        align-items:flex-start;
+        border-bottom: 0.5rem solid black;
+        &_div {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width:100%;
+            position: relative;
+        }    
+    }
+}

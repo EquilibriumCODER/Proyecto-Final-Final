@@ -12,35 +12,24 @@
 }
 .body_films {
     display: grid;
-    grid-template-rows: 1fr 0.5fr repeat (21, 1fr);;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas:    "head head head" 
-                            "title title title" 
-                            "poster1 info1 aside1" 
-                            "video1 video1 aside1b" 
-                            "poster2 info2 aside2a" 
-                            "video2 video2 aside2b" 
-                            "poster3 info3 aside3a" 
-                            "video3 video3 aside3b" 
-                            "poster4 info4 aside4a" 
-                            "video4 video4 aside4b" 
-                            "poster5 info5 aside5a" 
-                            "video5 video5 aside5b" 
-                            "poster6 info6 aside6a" 
-                            "video6 video6 aside6b" 
-                            "poster7 info7 aside7a" 
-                            "video7 video7 aside7b" 
-                            "poster8 info8 aside8a" 
-                            "video8 video8 aside8b" 
-                            "poster9 info9 aside9a" 
-                            "video9 video9 aside9b" 
-                            "poster10 info10 aside10a" 
-                            "video10 video10 aside10b"
-                            "foot foot foot"                    
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 10fr 0.5fr;
+    grid-template-areas: "head head" "title title" "main aside1" "foot foot";
+    &_main_1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+    }
+    iframe {
+        width: 100%;
+        height:100%;
+        position: absolute;
+    }
 }
 
-
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .body {
         grid-template-rows: 1fr 5fr 5fr 5fr 5fr 2.5fr 2.5fr 1fr;
         grid-template-columns: 1fr;
@@ -51,63 +40,35 @@
         grid-template-columns: 1fr;
         grid-template-areas: "head" "article1" "aside1" "foot";
     }
+    .header_h1 {
+        font-size: 3rem;
+    }
     .header_nav_li_a {
         font-size: small;
     }
-    .body_films {
-        display: grid;
-        grid-template-rows: 1fr 0.5fr repeat (31, 1fr);;
-        grid-template-columns: 1fr;
-        grid-template-areas:    "head" 
-                                "title" 
-                                "poster1" 
-                                "info1"  
-                                "video1" 
-                                "poster2"
-                                "info2" 
-                                "video2" 
-                                "poster3"
-                                "info3" 
-                                "video3" 
-                                "poster4"
-                                "info4" 
-                                "video4" 
-                                "poster5"
-                                "info5" 
-                                "video5" 
-                                "poster6"
-                                "info6" 
-                                "video6" 
-                                "poster7"
-                                "info7" 
-                                "video7" 
-                                "poster8"
-                                "info8" 
-                                "video8" 
-                                "poster9" 
-                                "info9"
-                                "video9" 
-                                "poster10"
-                                "info10" 
-                                "video10"
-                                "foot"                    
-    }
-}
 
-@media (min-width: 576px) and (max-width:767px) {
-    .body {
-        grid-template-rows: 1fr 5fr 5fr 5fr 5fr 1fr;
-        grid-template-columns: 4fr 2fr;
-        grid-template-areas: "head head" "article1 aside1" "article2 aside2" "article3 aside3" "article4 aside4" "foot foot";
-        header {
-            grid-column: 1 /span 2;
+    .body_films {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.2fr 40fr 2fr 1fr;
+        grid-template-areas: "head" "title" "main" "aside1" "foot";
+        &_main_1 {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &_h2 {
+            font-size: 1rem;
+        }
+        &_video_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         footer {
-            grid-column: 1 /span 2;
+            grid-area: foot;
+            grid-column: 1;
         }
-    }
-    .header_nav_li_a {
-        font-size: medium;
     }
 }
 
@@ -124,34 +85,7 @@
             grid-column: 1 /span 3;
         }
     }
-    .body_films {
-        display: grid;
-        grid-template-rows: 1fr 0.5fr repeat (21, 1fr);
-        grid-template-columns: 2fr 6fr 2fr;
-        grid-template-areas:    "head head head" 
-                                "title title title" 
-                                "poster1 info1 aside1" 
-                                "video1 video1 aside1b" 
-                                "poster2 info2 aside2a" 
-                                "video2 video2 aside2b" 
-                                "poster3 info3 aside3a" 
-                                "video3 video3 aside3b" 
-                                "poster4 info4 aside4a" 
-                                "video4 video4 aside4b" 
-                                "poster5 info5 aside5a" 
-                                "video5 video5 aside5b" 
-                                "poster6 info6 aside6a" 
-                                "video6 video6 aside6b" 
-                                "poster7 info7 aside7a" 
-                                "video7 video7 aside7b" 
-                                "poster8 info8 aside8a" 
-                                "video8 video8 aside8b" 
-                                "poster9 info9 aside9a" 
-                                "video9 video9 aside9b" 
-                                "poster10 info10 aside10a" 
-                                "video10 video10 aside10b"
-                                "foot foot foot"                    
-    }
+    
     header {
         grid-column: 1 /span 3;
     }
@@ -179,4 +113,9 @@
             grid-column: 1 /span 2;
         }
     }
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
